@@ -1,0 +1,28 @@
+{
+  "id": "smithy",
+  "name": "Smithy",
+  "aliases": [],
+  "category": "Service Interface (IDL)",
+  "currentVersion": "2.0",
+  "versions": [
+    { "version": "2.0", "status": "active", "url": "https://smithy.io/2.0/spec/index.html" },
+    { "version": "1.0", "status": "deprecated", "url": "https://smithy.io/1.0/spec/index.html" }
+  ],
+  "governingBody": {
+    "name": "Smithy-Lang (Amazon Web Services)",
+    "url": "https://smithy.io/"
+  },
+  "license": {
+    "id": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  "format": "DSL",
+  "transports": ["HTTP/1.1", "HTTP/2", "MQTT", "gRPC", "Multiple"],
+  "primaryUseCase": "Define protocol-agnostic service contracts using traits-based modeling and generate AWS SDKs, OpenAPI, JSON Schema, and clients/servers across multiple protocols.",
+  "specificationUrl": "https://smithy.io/2.0/spec/index.html",
+  "documentationUrl": "https://smithy.io/2.0/quickstart.html",
+  "repositoryUrl": "https://github.com/smithy-lang/smithy",
+  "tags": ["Smithy", "AWS", "IDL", "Specification Language"],
+  "status": "active",
+  "emits": ["OpenAPI 3.0", "JSON Schema", "AWS JSON 1.0/1.1"]
+}

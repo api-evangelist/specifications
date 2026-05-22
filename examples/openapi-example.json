@@ -1,0 +1,33 @@
+{
+  "id": "openapi",
+  "name": "OpenAPI Specification",
+  "aliases": ["Swagger Specification", "OAS"],
+  "category": "HTTP Request/Response",
+  "currentVersion": "3.1.0",
+  "versions": [
+    { "version": "3.1.0", "status": "active", "releaseDate": "2021-02-15", "url": "https://spec.openapis.org/oas/v3.1.0" },
+    { "version": "3.0.3", "status": "active", "releaseDate": "2020-02-20", "url": "https://spec.openapis.org/oas/v3.0.3" },
+    { "version": "2.0", "status": "deprecated", "releaseDate": "2014-09-08", "url": "https://spec.openapis.org/oas/v2.0" }
+  ],
+  "governingBody": {
+    "name": "OpenAPI Initiative",
+    "parent": "Linux Foundation",
+    "url": "https://www.openapis.org/",
+    "governanceUrl": "https://www.openapis.org/about"
+  },
+  "license": {
+    "id": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  "format": "YAML",
+  "transports": ["HTTP/1.1", "HTTP/2", "HTTP/3"],
+  "primaryUseCase": "Describe synchronous HTTP REST APIs and drive SDK generation, documentation, mock servers, and governance tooling from a single contract.",
+  "specificationUrl": "https://spec.openapis.org/oas/latest.html",
+  "documentationUrl": "https://learn.openapis.org/",
+  "repositoryUrl": "https://github.com/OAI/OpenAPI-Specification",
+  "toolingEcosystemUrl": "https://tools.openapis.org/",
+  "tags": ["OpenAPI", "REST", "HTTP", "Specification Language", "Linux Foundation"],
+  "status": "active",
+  "embeddedSchemaLanguage": "JSON Schema 2020-12 (3.1) / Schema Object (3.0)",
+  "emits": []
+}

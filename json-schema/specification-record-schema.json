@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/json-schema/specification-record-schema.json",
+  "title": "SpecificationRecord",
+  "description": "A normalized record describing a single API specification language — its name, current version, governing body, license, format, and tooling ecosystem.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for the specification.",
+      "example": "openapi",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the specification.",
+      "example": "OpenAPI Specification"
+    },
+    "aliases": {
+      "type": "array",
+      "description": "Alternative or historical names for the specification.",
+      "items": { "type": "string" },
+      "example": ["Swagger Specification", "OAS"]
+    },
+    "category": {
+      "type": "string",
+      "description": "The high-level category of specification.",
+      "enum": [
+        "HTTP Request/Response",
+        "Event-Driven",
+        "Service Interface (IDL)",
+        "Schema",
+        "RPC Protocol",
+        "Vendor-Defined"
+      ],
+      "example": "HTTP Request/Response"
+    },
+    "currentVersion": {
+      "type": "string",
+      "description": "Latest stable specification version.",
+      "example": "3.1.0"
+    },
+    "versions": {
+      "type": "array",
+      "description": "Known versions of the specification.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "version": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["active", "deprecated", "draft", "historical"]
+          },
+          "releaseDate": { "type": "string", "format": "date" },
+          "url": { "type": "string", "format": "uri" }
+        },
+        "required": ["version", "status"]
+      }
+    },
+    "governingBody": {
+      "type": "object",
+      "description": "Organization or working group responsible for the specification.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "OpenAPI Initiative"
+        },
+        "parent": {
+          "type": "string",
+          "description": "Umbrella foundation, if any.",
+          "example": "Linux Foundation"
+        },
+        "url": { "type": "string", "format": "uri" },
+        "governanceUrl": { "type": "string", "format": "uri" }
+      },
+      "required": ["name"]
+    },
+    "license": {
+      "type": "object",
+      "description": "License under which the specification is published.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "SPDX-style license identifier.",
+          "example": "Apache-2.0"
+        },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "required": ["id"]
+    },
+    "format": {
+      "type": "string",
+      "description": "Primary serialization format of the specification source.",
+      "enum": ["YAML", "JSON", "Markdown", "XML", "DSL", "Protobuf", "Multiple"],
+      "example": "YAML"
+    },
+    "transports": {
+      "type": "array",
+      "description": "Transports or protocols the specification targets.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "HTTP/1.1",
+          "HTTP/2",
+          "HTTP/3",
+          "WebSocket",
+          "Kafka",
+          "AMQP",
+          "MQTT",
+          "NATS",
+          "SNS/SQS",
+          "TCP",
+          "gRPC",
+          "XML/SOAP",
+          "Multiple",
+          "N/A"
+        ]
+      },
+      "example": ["HTTP/1.1", "HTTP/2"]
+    },
+    "primaryUseCase": {
+      "type": "string",
+      "description": "The primary use case the specification is designed for.",
+      "example": "Describing synchronous HTTP REST APIs and generating SDKs, documentation, and mocks."
+    },
+    "specificationUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical URL of the current specification text."
+    },
+    "documentationUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Primary documentation entrypoint."
+    },
+    "repositoryUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical source repository for the specification."
+    },
+    "toolingEcosystemUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the curated tooling directory for the specification.",
+      "example": "https://tools.openapis.org/"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Categorization tags (Title Case).",
+      "items": { "type": "string" }
+    },
+    "status": {
+      "type": "string",
+      "description": "Overall lifecycle status of the specification.",
+      "enum": ["active", "maintenance", "legacy", "historical", "emerging"],
+      "example": "active"
+    },
+    "embeddedSchemaLanguage": {
+      "type": "string",
+      "description": "Schema language embedded inside the spec, if any.",
+      "example": "JSON Schema 2020-12"
+    },
+    "emits": {
+      "type": "array",
+      "description": "Other specification formats this spec can be compiled/emitted to.",
+      "items": { "type": "string" },
+      "example": ["OpenAPI 3.0", "JSON Schema", "Protobuf"]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "currentVersion",
+    "governingBody",
+    "license",
+    "primaryUseCase"
+  ]
+}

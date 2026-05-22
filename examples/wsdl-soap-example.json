@@ -1,0 +1,29 @@
+{
+  "id": "wsdl-soap",
+  "name": "WSDL / SOAP",
+  "aliases": ["Web Services Description Language", "SOAP"],
+  "category": "Service Interface (IDL)",
+  "currentVersion": "WSDL 2.0",
+  "versions": [
+    { "version": "WSDL 1.1", "status": "historical", "releaseDate": "2001-03-15", "url": "https://www.w3.org/TR/wsdl/" },
+    { "version": "WSDL 2.0", "status": "historical", "releaseDate": "2007-06-26", "url": "https://www.w3.org/TR/wsdl20/" },
+    { "version": "SOAP 1.2", "status": "historical", "releaseDate": "2007-04-27", "url": "https://www.w3.org/TR/soap12-part1/" }
+  ],
+  "governingBody": {
+    "name": "World Wide Web Consortium (W3C)",
+    "url": "https://www.w3.org/groups/wg/ws-desc/"
+  },
+  "license": {
+    "id": "W3C-Document",
+    "url": "https://www.w3.org/copyright/document-license-2023/"
+  },
+  "format": "XML",
+  "transports": ["XML/SOAP", "HTTP/1.1"],
+  "primaryUseCase": "Describe and bind XML-based SOAP web services for synchronous, contract-first enterprise integration; remains relevant for legacy enterprise and government interfaces.",
+  "specificationUrl": "https://www.w3.org/TR/wsdl20/",
+  "documentationUrl": "https://www.w3.org/TR/wsdl20-primer/",
+  "repositoryUrl": "https://www.w3.org/TR/wsdl20/",
+  "tags": ["WSDL", "SOAP", "W3C", "XML", "Legacy", "Specification Language"],
+  "status": "historical",
+  "emits": []
+}

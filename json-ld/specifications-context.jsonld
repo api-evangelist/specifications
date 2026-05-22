@@ -1,0 +1,115 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "spec": "https://api-evangelist.github.io/specifications/ns#",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "SpecificationRecord": {
+      "@id": "spec:SpecificationRecord",
+      "@type": "schema:SoftwareSourceCode"
+    },
+    "GoverningBody": {
+      "@id": "spec:GoverningBody",
+      "@type": "schema:Organization"
+    },
+    "License": {
+      "@id": "spec:License",
+      "@type": "schema:CreativeWork"
+    },
+    "SpecificationVersion": {
+      "@id": "spec:SpecificationVersion",
+      "@type": "schema:Thing"
+    },
+
+    "id": "@id",
+    "name": "schema:name",
+    "aliases": {
+      "@id": "schema:alternateName",
+      "@container": "@set"
+    },
+    "category": {
+      "@id": "spec:category",
+      "@type": "xsd:string"
+    },
+    "status": {
+      "@id": "spec:status",
+      "@type": "xsd:string"
+    },
+    "currentVersion": {
+      "@id": "schema:softwareVersion",
+      "@type": "xsd:string"
+    },
+    "versions": {
+      "@id": "spec:versions",
+      "@container": "@set"
+    },
+    "version": {
+      "@id": "schema:softwareVersion",
+      "@type": "xsd:string"
+    },
+    "releaseDate": {
+      "@id": "schema:datePublished",
+      "@type": "xsd:date"
+    },
+    "governingBody": {
+      "@id": "spec:governingBody",
+      "@type": "@id"
+    },
+    "parent": {
+      "@id": "schema:parentOrganization",
+      "@type": "@id"
+    },
+    "license": {
+      "@id": "schema:license",
+      "@type": "@id"
+    },
+    "format": {
+      "@id": "schema:encodingFormat",
+      "@type": "xsd:string"
+    },
+    "transports": {
+      "@id": "spec:transport",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "primaryUseCase": {
+      "@id": "dcterms:description",
+      "@type": "xsd:string"
+    },
+    "specificationUrl": {
+      "@id": "spec:specificationUrl",
+      "@type": "@id"
+    },
+    "documentationUrl": {
+      "@id": "schema:documentation",
+      "@type": "@id"
+    },
+    "repositoryUrl": {
+      "@id": "schema:codeRepository",
+      "@type": "@id"
+    },
+    "toolingEcosystemUrl": {
+      "@id": "spec:toolingEcosystemUrl",
+      "@type": "@id"
+    },
+    "embeddedSchemaLanguage": {
+      "@id": "spec:embeddedSchemaLanguage",
+      "@type": "xsd:string"
+    },
+    "emits": {
+      "@id": "spec:emits",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "url": "schema:url",
+    "description": "schema:description",
+    "tags": {
+      "@id": "schema:keywords",
+      "@container": "@set",
+      "@type": "xsd:string"
+    }
+  }
+}

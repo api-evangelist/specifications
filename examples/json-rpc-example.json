@@ -1,0 +1,28 @@
+{
+  "id": "json-rpc",
+  "name": "JSON-RPC 2.0",
+  "aliases": ["JSON-RPC"],
+  "category": "RPC Protocol",
+  "currentVersion": "2.0",
+  "versions": [
+    { "version": "2.0", "status": "active", "releaseDate": "2010-03-26", "url": "https://www.jsonrpc.org/specification" },
+    { "version": "1.0", "status": "historical", "url": "https://www.jsonrpc.org/specification_v1" }
+  ],
+  "governingBody": {
+    "name": "JSON-RPC Working Group",
+    "url": "https://www.jsonrpc.org/"
+  },
+  "license": {
+    "id": "CC0-1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "format": "JSON",
+  "transports": ["HTTP/1.1", "WebSocket", "TCP"],
+  "primaryUseCase": "Stateless, lightweight remote procedure call protocol encoded in JSON; widely used in blockchain APIs (Ethereum, Bitcoin), IDE language servers (LSP), and developer tooling.",
+  "specificationUrl": "https://www.jsonrpc.org/specification",
+  "documentationUrl": "https://www.jsonrpc.org/",
+  "repositoryUrl": "https://www.jsonrpc.org/",
+  "tags": ["JSON-RPC", "RPC", "JSON", "Specification Language"],
+  "status": "active",
+  "emits": []
+}

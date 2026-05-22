@@ -1,0 +1,29 @@
+{
+  "id": "graphql",
+  "name": "GraphQL SDL",
+  "aliases": ["GraphQL Schema Definition Language"],
+  "category": "Service Interface (IDL)",
+  "currentVersion": "October 2021",
+  "versions": [
+    { "version": "October 2021", "status": "active", "releaseDate": "2021-10-26", "url": "https://spec.graphql.org/October2021/" },
+    { "version": "Working Draft", "status": "draft", "url": "https://spec.graphql.org/draft/" }
+  ],
+  "governingBody": {
+    "name": "GraphQL Foundation",
+    "parent": "Linux Foundation",
+    "url": "https://graphql.org/foundation/"
+  },
+  "license": {
+    "id": "OWFa-1.0",
+    "url": "https://www.openwebfoundation.org/the-agreements/the-owf-1-0-agreements-granted-claims/owfa-1-0"
+  },
+  "format": "DSL",
+  "transports": ["HTTP/1.1", "HTTP/2", "WebSocket"],
+  "primaryUseCase": "Define type systems, queries, mutations, and subscriptions for GraphQL servers, enabling client-driven data shaping over a single endpoint.",
+  "specificationUrl": "https://spec.graphql.org/October2021/",
+  "documentationUrl": "https://graphql.org/learn/",
+  "repositoryUrl": "https://github.com/graphql/graphql-spec",
+  "tags": ["GraphQL", "SDL", "Query Language", "Schema", "Linux Foundation"],
+  "status": "active",
+  "emits": []
+}

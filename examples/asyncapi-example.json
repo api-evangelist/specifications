@@ -1,0 +1,32 @@
+{
+  "id": "asyncapi",
+  "name": "AsyncAPI Specification",
+  "aliases": ["AsyncAPI"],
+  "category": "Event-Driven",
+  "currentVersion": "3.0.0",
+  "versions": [
+    { "version": "3.0.0", "status": "active", "releaseDate": "2023-12-11", "url": "https://www.asyncapi.com/docs/reference/specification/v3.0.0" },
+    { "version": "2.6.0", "status": "active", "releaseDate": "2022-12-19", "url": "https://www.asyncapi.com/docs/reference/specification/v2.6.0" }
+  ],
+  "governingBody": {
+    "name": "AsyncAPI Initiative",
+    "parent": "Linux Foundation",
+    "url": "https://www.asyncapi.com/",
+    "governanceUrl": "https://www.asyncapi.com/community"
+  },
+  "license": {
+    "id": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  "format": "YAML",
+  "transports": ["Kafka", "AMQP", "MQTT", "WebSocket", "NATS", "SNS/SQS", "HTTP/1.1"],
+  "primaryUseCase": "Describe event-driven and message-driven APIs across brokers and protocols, modelling channels, operations, messages, and bindings for streaming and pub/sub systems.",
+  "specificationUrl": "https://www.asyncapi.com/docs/reference/specification/latest",
+  "documentationUrl": "https://www.asyncapi.com/docs",
+  "repositoryUrl": "https://github.com/asyncapi/spec",
+  "toolingEcosystemUrl": "https://www.asyncapi.com/tools",
+  "tags": ["AsyncAPI", "Event-Driven", "Messaging", "Streaming", "Specification Language"],
+  "status": "active",
+  "embeddedSchemaLanguage": "JSON Schema (Draft 07 / 2020-12) and protocol-specific schemas (Avro, Protobuf)",
+  "emits": []
+}

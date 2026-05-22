@@ -1,0 +1,29 @@
+{
+  "id": "grpc-protobuf",
+  "name": "gRPC / Protocol Buffers",
+  "aliases": ["gRPC", "Protobuf", "Protocol Buffers"],
+  "category": "RPC Protocol",
+  "currentVersion": "proto3 / gRPC 1.x",
+  "versions": [
+    { "version": "proto3", "status": "active", "url": "https://protobuf.dev/reference/protobuf/proto3-spec/" },
+    { "version": "proto2", "status": "active", "url": "https://protobuf.dev/programming-guides/proto2/" }
+  ],
+  "governingBody": {
+    "name": "Cloud Native Computing Foundation (gRPC) / Google (Protobuf)",
+    "parent": "Linux Foundation",
+    "url": "https://www.cncf.io/projects/grpc/"
+  },
+  "license": {
+    "id": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  "format": "Protobuf",
+  "transports": ["HTTP/2", "gRPC", "TCP"],
+  "primaryUseCase": "Define high-performance language-agnostic RPC services and binary message schemas for internal microservice and edge communication.",
+  "specificationUrl": "https://protobuf.dev/reference/protobuf/proto3-spec/",
+  "documentationUrl": "https://grpc.io/docs/",
+  "repositoryUrl": "https://github.com/protocolbuffers/protobuf",
+  "tags": ["gRPC", "Protobuf", "RPC", "CNCF", "Specification Language"],
+  "status": "active",
+  "emits": ["JSON Schema (via tooling)"]
+}

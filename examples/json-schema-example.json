@@ -1,0 +1,32 @@
+{
+  "id": "json-schema",
+  "name": "JSON Schema",
+  "aliases": ["JSON Schema Draft 2020-12"],
+  "category": "Schema",
+  "currentVersion": "Draft 2020-12",
+  "versions": [
+    { "version": "Draft 2020-12", "status": "active", "url": "https://json-schema.org/draft/2020-12/release-notes" },
+    { "version": "Draft 2019-09", "status": "active", "url": "https://json-schema.org/draft/2019-09/release-notes" },
+    { "version": "Draft 07", "status": "active", "url": "https://json-schema.org/draft-07/json-schema-release-notes" }
+  ],
+  "governingBody": {
+    "name": "JSON Schema",
+    "url": "https://json-schema.org/",
+    "governanceUrl": "https://json-schema.org/specification"
+  },
+  "license": {
+    "id": "BSD-3-Clause",
+    "url": "https://opensource.org/license/bsd-3-clause"
+  },
+  "format": "JSON",
+  "transports": ["N/A"],
+  "primaryUseCase": "Annotate and validate JSON documents; provide the schema layer embedded in OpenAPI 3.1, AsyncAPI 3, and most modern API specifications.",
+  "specificationUrl": "https://json-schema.org/draft/2020-12/json-schema-core",
+  "documentationUrl": "https://json-schema.org/learn/getting-started-step-by-step",
+  "repositoryUrl": "https://github.com/json-schema-org/json-schema-spec",
+  "toolingEcosystemUrl": "https://json-schema.org/tools",
+  "tags": ["JSON Schema", "Validation", "Schema", "Specification Language"],
+  "status": "active",
+  "embeddedSchemaLanguage": "Self",
+  "emits": []
+}

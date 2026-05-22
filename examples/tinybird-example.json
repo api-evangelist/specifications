@@ -1,0 +1,27 @@
+{
+  "id": "tinybird",
+  "name": "Tinybird API Spec",
+  "aliases": ["Tinybird Pipes"],
+  "category": "Vendor-Defined",
+  "currentVersion": "vendor-current",
+  "versions": [
+    { "version": "vendor-current", "status": "active", "url": "https://www.tinybird.co/docs/api-reference" }
+  ],
+  "governingBody": {
+    "name": "Tinybird",
+    "url": "https://www.tinybird.co/"
+  },
+  "license": {
+    "id": "MIT",
+    "url": "https://opensource.org/license/mit"
+  },
+  "format": "Multiple",
+  "transports": ["HTTP/1.1", "HTTP/2"],
+  "primaryUseCase": "Describe analytics endpoints (pipes), data sources, and parameters for ClickHouse-backed data APIs as a vendor-defined higher-level domain model that complements or replaces hand-written OpenAPI.",
+  "specificationUrl": "https://www.tinybird.co/docs/api-reference",
+  "documentationUrl": "https://www.tinybird.co/docs",
+  "repositoryUrl": "https://github.com/tinybirdco",
+  "tags": ["Tinybird", "Vendor Specification", "Analytics", "Specification Language"],
+  "status": "active",
+  "emits": ["OpenAPI 3.0 (derived endpoints)"]
+}

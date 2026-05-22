@@ -1,0 +1,27 @@
+{
+  "id": "api-blueprint",
+  "name": "API Blueprint",
+  "aliases": [],
+  "category": "HTTP Request/Response",
+  "currentVersion": "1A revision 9",
+  "versions": [
+    { "version": "1A revision 9", "status": "historical", "url": "https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md" }
+  ],
+  "governingBody": {
+    "name": "Apiary / Oracle (historical)",
+    "url": "https://apiblueprint.org/"
+  },
+  "license": {
+    "id": "MIT",
+    "url": "https://opensource.org/license/mit"
+  },
+  "format": "Markdown",
+  "transports": ["HTTP/1.1"],
+  "primaryUseCase": "Describe HTTP APIs in human-friendly Markdown with embedded MSON data structures; widely used during the early API documentation era but no longer actively maintained.",
+  "specificationUrl": "https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md",
+  "documentationUrl": "https://apiblueprint.org/documentation/tutorial.html",
+  "repositoryUrl": "https://github.com/apiaryio/api-blueprint",
+  "tags": ["API Blueprint", "Markdown", "Legacy", "Specification Language"],
+  "status": "historical",
+  "emits": []
+}

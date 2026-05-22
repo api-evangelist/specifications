@@ -1,0 +1,28 @@
+{
+  "id": "json-structure",
+  "name": "JSON Structure",
+  "aliases": [],
+  "category": "Schema",
+  "currentVersion": "Core v0",
+  "versions": [
+    { "version": "Core v0", "status": "draft", "url": "https://json-structure.org/meta/core/v0/" }
+  ],
+  "governingBody": {
+    "name": "JSON Structure Working Group",
+    "url": "https://json-structure.org/"
+  },
+  "license": {
+    "id": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  "format": "JSON",
+  "transports": ["N/A"],
+  "primaryUseCase": "Provide a clearer, code-generation-friendly type system that complements JSON Schema for cross-language data modeling and contract definition.",
+  "specificationUrl": "https://json-structure.org/meta/core/v0/",
+  "documentationUrl": "https://json-structure.org/",
+  "repositoryUrl": "https://github.com/json-structure/specification",
+  "tags": ["JSON Structure", "Schema", "Data Modeling", "Specification Language"],
+  "status": "emerging",
+  "embeddedSchemaLanguage": "Self",
+  "emits": []
+}

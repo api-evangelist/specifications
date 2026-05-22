@@ -1,0 +1,672 @@
+aid: specifications
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/apis.yml
+name: API Specifications
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - API Specifications
+  - Specification Languages
+  - API Design
+  - Contracts
+  - Schemas
+  - Interface Definitions
+  - Standards
+description: >-
+  Meta-index of the specification languages used to describe APIs, events,
+  schemas, and service interfaces across the modern API landscape. This repo
+  is the META layer above the topical repos that profile each individual
+  specification — it catalogs every major HTTP, event-driven, schema, and
+  service interface specification along with its current version, governing
+  body, license, and tooling ecosystem.
+created: '2026-05-22'
+modified: '2026-05-22'
+specificationVersion: '0.19'
+apis:
+  - aid: specifications:openapi
+    name: OpenAPI Specification (OAS)
+    description: >-
+      The OpenAPI Specification (formerly Swagger) is the dominant industry
+      standard for describing HTTP-based RESTful APIs. OAS describes endpoints,
+      operations, parameters, request/response schemas, authentication, and
+      examples in a machine- and human-readable format. The active versions
+      are 3.0.x and 3.1.0 (which is fully aligned with JSON Schema 2020-12).
+      OpenAPI is governed by the OpenAPI Initiative, a Linux Foundation
+      project, under the Apache 2.0 license.
+    humanURL: https://www.openapis.org/
+    baseURL: https://spec.openapis.org/oas/latest.html
+    tags:
+      - OpenAPI
+      - REST
+      - HTTP
+      - Specification Language
+      - OpenAPI Initiative
+      - Linux Foundation
+    properties:
+      - type: Documentation
+        url: https://learn.openapis.org/
+      - type: Specification
+        url: https://spec.openapis.org/oas/latest.html
+        title: OpenAPI Specification (latest)
+      - type: Specification
+        url: https://spec.openapis.org/oas/v3.1.0
+        title: OpenAPI 3.1.0
+      - type: Specification
+        url: https://spec.openapis.org/oas/v3.0.3
+        title: OpenAPI 3.0.3
+      - type: GitHubRepository
+        url: https://github.com/OAI/OpenAPI-Specification
+      - type: GitHubOrganization
+        url: https://github.com/OAI
+        title: OpenAPI Initiative GitHub Organization
+      - type: Governance
+        url: https://www.openapis.org/about
+        title: OpenAPI Initiative / Linux Foundation
+      - type: License
+        url: https://www.apache.org/licenses/LICENSE-2.0
+        title: Apache 2.0
+      - type: Tools
+        url: https://tools.openapis.org/
+        title: OpenAPI Tools Directory
+      - type: JSONSchema
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/json-schema/specification-record-schema.json
+        title: Specification Record Schema
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/openapi-example.json
+        title: OpenAPI Specification Record Example
+  - aid: specifications:asyncapi
+    name: AsyncAPI Specification
+    description: >-
+      AsyncAPI is the open standard for describing event-driven and
+      message-driven APIs across protocols such as Kafka, AMQP, MQTT, WebSocket,
+      NATS, and SNS/SQS. AsyncAPI 3.0 (December 2023) decoupled operations from
+      channels, enabling clearer modelling of pub/sub, request/reply, and
+      streaming patterns. AsyncAPI is governed by the AsyncAPI Initiative
+      under the Linux Foundation, distributed under the Apache 2.0 license.
+    humanURL: https://www.asyncapi.com/
+    baseURL: https://www.asyncapi.com/docs/reference/specification/latest
+    tags:
+      - AsyncAPI
+      - Event-Driven
+      - Messaging
+      - Streaming
+      - Specification Language
+      - Linux Foundation
+    properties:
+      - type: Documentation
+        url: https://www.asyncapi.com/docs
+      - type: Specification
+        url: https://www.asyncapi.com/docs/reference/specification/latest
+        title: AsyncAPI Specification (latest)
+      - type: Specification
+        url: https://www.asyncapi.com/docs/reference/specification/v3.0.0
+        title: AsyncAPI 3.0.0
+      - type: GitHubOrganization
+        url: https://github.com/asyncapi
+      - type: GitHubRepository
+        url: https://github.com/asyncapi/spec
+      - type: Governance
+        url: https://www.asyncapi.com/community
+        title: AsyncAPI Initiative / Linux Foundation
+      - type: License
+        url: https://www.apache.org/licenses/LICENSE-2.0
+        title: Apache 2.0
+      - type: Tools
+        url: https://www.asyncapi.com/tools
+        title: AsyncAPI Tools
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/asyncapi-example.json
+        title: AsyncAPI Specification Record Example
+  - aid: specifications:json-schema
+    name: JSON Schema
+    description: >-
+      JSON Schema is a declarative language for annotating and validating JSON
+      documents. It is the foundational schema language for most modern API
+      specifications (OpenAPI 3.1, AsyncAPI 3, and others embed it directly).
+      The current stable dialect is Draft 2020-12. Governance is moving toward
+      a chartered standards body (JSON Schema Foundation), with the IETF as
+      the historical sponsor; reference implementations and tooling are MIT
+      and BSD-licensed.
+    humanURL: https://json-schema.org/
+    baseURL: https://json-schema.org/draft/2020-12
+    tags:
+      - JSON Schema
+      - Validation
+      - Schema
+      - IETF
+      - Specification Language
+    properties:
+      - type: Documentation
+        url: https://json-schema.org/learn/getting-started-step-by-step
+      - type: Specification
+        url: https://json-schema.org/draft/2020-12/release-notes
+        title: JSON Schema Draft 2020-12 Release Notes
+      - type: Specification
+        url: https://json-schema.org/draft/2020-12/json-schema-core
+        title: JSON Schema Core (2020-12)
+      - type: GitHubOrganization
+        url: https://github.com/json-schema-org
+      - type: GitHubRepository
+        url: https://github.com/json-schema-org/json-schema-spec
+      - type: Governance
+        url: https://json-schema.org/specification
+        title: JSON Schema Specification Governance
+      - type: License
+        url: https://opensource.org/license/bsd-3-clause
+        title: BSD-3-Clause (reference tooling)
+      - type: Tools
+        url: https://json-schema.org/tools
+        title: JSON Schema Tooling Ecosystem
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/json-schema-example.json
+        title: JSON Schema Specification Record Example
+  - aid: specifications:json-structure
+    name: JSON Structure
+    description: >-
+      JSON Structure is an emerging open specification that extends and
+      complements JSON Schema with a clearer, more code-generation-friendly
+      type system designed for data contracts and modeling. It introduces
+      structural primitives intended for cross-language model generation. The
+      project is community-driven and Apache 2.0 licensed.
+    humanURL: https://json-structure.org/
+    baseURL: https://json-structure.org/meta/core/v0/
+    tags:
+      - JSON Structure
+      - Schema
+      - Data Modeling
+      - Code Generation
+      - Specification Language
+    properties:
+      - type: Documentation
+        url: https://json-structure.org/
+      - type: Specification
+        url: https://json-structure.org/meta/core/v0/
+        title: JSON Structure Core Meta-Schema v0
+      - type: GitHubRepository
+        url: https://github.com/json-structure/specification
+      - type: License
+        url: https://www.apache.org/licenses/LICENSE-2.0
+        title: Apache 2.0
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/json-structure-example.json
+        title: JSON Structure Specification Record Example
+  - aid: specifications:graphql
+    name: GraphQL SDL
+    description: >-
+      GraphQL is a query language and runtime for APIs, defined by the GraphQL
+      Specification. The GraphQL Schema Definition Language (SDL) is the
+      declarative format used to define types, queries, mutations, and
+      subscriptions on a GraphQL server. The spec is governed by the GraphQL
+      Foundation, a Linux Foundation project, under the OWFa 1.0 license. The
+      current spec edition is the October 2021 release with continued
+      Working Drafts.
+    humanURL: https://graphql.org/
+    baseURL: https://spec.graphql.org/
+    tags:
+      - GraphQL
+      - SDL
+      - Query Language
+      - Schema
+      - GraphQL Foundation
+      - Linux Foundation
+    properties:
+      - type: Documentation
+        url: https://graphql.org/learn/
+      - type: Specification
+        url: https://spec.graphql.org/October2021/
+        title: GraphQL Specification (October 2021)
+      - type: Specification
+        url: https://spec.graphql.org/draft/
+        title: GraphQL Specification (Working Draft)
+      - type: GitHubOrganization
+        url: https://github.com/graphql
+      - type: GitHubRepository
+        url: https://github.com/graphql/graphql-spec
+      - type: Governance
+        url: https://graphql.org/foundation/
+        title: GraphQL Foundation
+      - type: License
+        url: https://www.openwebfoundation.org/the-agreements/the-owf-1-0-agreements-granted-claims/owfa-1-0
+        title: OWFa 1.0
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/graphql-example.json
+        title: GraphQL Specification Record Example
+  - aid: specifications:grpc-protobuf
+    name: gRPC and Protocol Buffers
+    description: >-
+      gRPC is a high-performance RPC framework using HTTP/2 and Protocol
+      Buffers (Protobuf) as its IDL and wire format. Service definitions are
+      written in .proto files. gRPC is a CNCF graduated project; Protocol
+      Buffers (proto2/proto3, with proto editions emerging) are maintained by
+      Google. Both are Apache 2.0 / BSD-3-Clause licensed.
+    humanURL: https://grpc.io/
+    baseURL: https://protobuf.dev/
+    tags:
+      - gRPC
+      - Protobuf
+      - Protocol Buffers
+      - RPC
+      - CNCF
+      - Specification Language
+    properties:
+      - type: Documentation
+        url: https://grpc.io/docs/
+      - type: Documentation
+        url: https://protobuf.dev/programming-guides/proto3/
+        title: Protocol Buffers Language Guide (proto3)
+      - type: Specification
+        url: https://protobuf.dev/reference/protobuf/proto3-spec/
+        title: Protocol Buffers proto3 Specification
+      - type: GitHubOrganization
+        url: https://github.com/grpc
+      - type: GitHubOrganization
+        url: https://github.com/protocolbuffers
+      - type: GitHubRepository
+        url: https://github.com/grpc/grpc
+      - type: GitHubRepository
+        url: https://github.com/protocolbuffers/protobuf
+      - type: Governance
+        url: https://www.cncf.io/projects/grpc/
+        title: gRPC at CNCF
+      - type: License
+        url: https://www.apache.org/licenses/LICENSE-2.0
+        title: Apache 2.0
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/grpc-protobuf-example.json
+        title: gRPC / Protobuf Specification Record Example
+  - aid: specifications:smithy
+    name: Smithy
+    description: >-
+      Smithy is an open-source IDL and code-generation framework for defining
+      services and SDKs, created and maintained by AWS. It is protocol-agnostic
+      (HTTP REST, AWS JSON, MQTT, RPC), supports traits-based modeling, and is
+      used to generate AWS service SDKs, OpenAPI, and JSON Schema. Smithy is
+      Apache 2.0 licensed.
+    humanURL: https://smithy.io/
+    baseURL: https://smithy.io/2.0/
+    tags:
+      - Smithy
+      - AWS
+      - IDL
+      - Service Definition
+      - Specification Language
+    properties:
+      - type: Documentation
+        url: https://smithy.io/2.0/quickstart.html
+      - type: Specification
+        url: https://smithy.io/2.0/spec/index.html
+        title: Smithy 2.0 Specification
+      - type: GitHubOrganization
+        url: https://github.com/smithy-lang
+      - type: GitHubRepository
+        url: https://github.com/smithy-lang/smithy
+      - type: Governance
+        url: https://github.com/smithy-lang
+        title: Smithy maintained by Smithy-Lang / AWS
+      - type: License
+        url: https://www.apache.org/licenses/LICENSE-2.0
+        title: Apache 2.0
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/smithy-example.json
+        title: Smithy Specification Record Example
+  - aid: specifications:typespec
+    name: TypeSpec
+    description: >-
+      TypeSpec (formerly Cadl) is a language for describing API shapes
+      developed by Microsoft. TypeSpec definitions emit OpenAPI 3.x, JSON
+      Schema, Protobuf, and other artifacts, and serve as the upstream source
+      for Azure SDK generation. TypeSpec is MIT licensed and maintained on
+      GitHub under the microsoft organization.
+    humanURL: https://typespec.io/
+    baseURL: https://typespec.io/docs
+    tags:
+      - TypeSpec
+      - Microsoft
+      - IDL
+      - API Design
+      - Specification Language
+    properties:
+      - type: Documentation
+        url: https://typespec.io/docs
+      - type: Specification
+        url: https://typespec.io/docs/language-basics/overview
+        title: TypeSpec Language Reference
+      - type: GitHubRepository
+        url: https://github.com/microsoft/typespec
+      - type: GitHubOrganization
+        url: https://github.com/microsoft
+        title: Microsoft GitHub (governing org)
+      - type: Governance
+        url: https://github.com/microsoft/typespec/blob/main/GOVERNANCE.md
+        title: TypeSpec Governance
+      - type: License
+        url: https://opensource.org/license/mit
+        title: MIT
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/typespec-example.json
+        title: TypeSpec Specification Record Example
+  - aid: specifications:raml
+    name: RAML (RESTful API Modeling Language)
+    description: >-
+      RAML is a YAML-based modelling language for RESTful APIs, originally
+      created by Mulesoft. RAML 1.0 (2016) is the current stable specification.
+      RAML governance has effectively converged with Mulesoft / Salesforce,
+      and the broader industry has shifted toward OpenAPI; RAML remains in use
+      across legacy Mulesoft / Anypoint stacks. Spec licensed under
+      Apache 2.0.
+    humanURL: https://raml.org/
+    baseURL: https://github.com/raml-org/raml-spec
+    tags:
+      - RAML
+      - REST
+      - Mulesoft
+      - Legacy
+      - Specification Language
+    properties:
+      - type: Documentation
+        url: https://raml.org/developers/raml-100-tutorial
+      - type: Specification
+        url: https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md
+        title: RAML 1.0 Specification
+      - type: GitHubOrganization
+        url: https://github.com/raml-org
+      - type: GitHubRepository
+        url: https://github.com/raml-org/raml-spec
+      - type: Governance
+        url: https://raml.org/about-raml
+        title: RAML Workgroup (stewarded by Mulesoft/Salesforce)
+      - type: License
+        url: https://www.apache.org/licenses/LICENSE-2.0
+        title: Apache 2.0
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/raml-example.json
+        title: RAML Specification Record Example
+  - aid: specifications:api-blueprint
+    name: API Blueprint
+    description: >-
+      API Blueprint is a Markdown-based specification language for describing
+      web APIs, originally created by Apiary (acquired by Oracle). The spec is
+      MIT licensed but development effectively stalled after Oracle's
+      acquisition of Apiary; it is documented here for completeness as
+      historical context for the API specification landscape.
+    humanURL: https://apiblueprint.org/
+    baseURL: https://github.com/apiaryio/api-blueprint
+    tags:
+      - API Blueprint
+      - Markdown
+      - Legacy
+      - Historical
+      - Specification Language
+    properties:
+      - type: Documentation
+        url: https://apiblueprint.org/documentation/tutorial.html
+      - type: Specification
+        url: https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md
+        title: API Blueprint Specification
+      - type: GitHubOrganization
+        url: https://github.com/apiaryio
+      - type: GitHubRepository
+        url: https://github.com/apiaryio/api-blueprint
+      - type: License
+        url: https://opensource.org/license/mit
+        title: MIT
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/api-blueprint-example.json
+        title: API Blueprint Specification Record Example
+  - aid: specifications:wsdl-soap
+    name: WSDL / SOAP
+    description: >-
+      The Web Services Description Language (WSDL) is the historical XML-based
+      interface definition language for SOAP web services. WSDL 1.1 (2001) is
+      the most widely deployed version; WSDL 2.0 is a W3C Recommendation
+      (2007). SOAP and WSDL are governed by the W3C and remain critical in
+      legacy enterprise and government integrations. Documented here as the
+      historical baseline for service interface specifications.
+    humanURL: https://www.w3.org/TR/wsdl/
+    baseURL: https://www.w3.org/TR/wsdl20/
+    tags:
+      - WSDL
+      - SOAP
+      - W3C
+      - XML
+      - Legacy
+      - Historical
+      - Specification Language
+    properties:
+      - type: Documentation
+        url: https://www.w3.org/TR/wsdl20-primer/
+      - type: Specification
+        url: https://www.w3.org/TR/wsdl/
+        title: WSDL 1.1 Note (W3C, 2001)
+      - type: Specification
+        url: https://www.w3.org/TR/wsdl20/
+        title: WSDL 2.0 Recommendation (W3C, 2007)
+      - type: Specification
+        url: https://www.w3.org/TR/soap12-part1/
+        title: SOAP 1.2 Recommendation (W3C)
+      - type: Governance
+        url: https://www.w3.org/groups/wg/ws-desc/
+        title: W3C Web Services Description Working Group
+      - type: License
+        url: https://www.w3.org/copyright/document-license-2023/
+        title: W3C Document License
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/wsdl-soap-example.json
+        title: WSDL / SOAP Specification Record Example
+  - aid: specifications:json-rpc
+    name: JSON-RPC 2.0
+    description: >-
+      JSON-RPC 2.0 is a stateless, light-weight remote procedure call (RPC)
+      protocol encoded in JSON. It is widely used in blockchain/Web3 APIs
+      (Ethereum, Bitcoin), IDE language servers (LSP), and developer tooling.
+      The 2.0 specification (2010) is the stable revision, maintained by the
+      JSON-RPC Working Group. Released into the public domain.
+    humanURL: https://www.jsonrpc.org/
+    baseURL: https://www.jsonrpc.org/specification
+    tags:
+      - JSON-RPC
+      - RPC
+      - JSON
+      - Specification Language
+    properties:
+      - type: Documentation
+        url: https://www.jsonrpc.org/
+      - type: Specification
+        url: https://www.jsonrpc.org/specification
+        title: JSON-RPC 2.0 Specification
+      - type: Governance
+        url: https://www.jsonrpc.org/
+        title: JSON-RPC Working Group
+      - type: License
+        url: https://creativecommons.org/publicdomain/zero/1.0/
+        title: Public Domain / CC0
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/json-rpc-example.json
+        title: JSON-RPC Specification Record Example
+  - aid: specifications:tinybird
+    name: Tinybird API Spec
+    description: >-
+      The Tinybird API specification is a vendor-defined, declarative format
+      for describing analytics endpoints (pipes), data sources, and parameters
+      backed by ClickHouse. It is documented here as a representative example
+      of vendor-specific specification formats that govern modern data API
+      products outside of the OpenAPI/AsyncAPI mainline. Maintained by
+      Tinybird; SDKs and CLI are MIT licensed.
+    humanURL: https://www.tinybird.co/docs
+    baseURL: https://www.tinybird.co/docs/api-reference
+    tags:
+      - Tinybird
+      - Analytics
+      - Vendor Specification
+      - Data API
+      - Specification Language
+    properties:
+      - type: Documentation
+        url: https://www.tinybird.co/docs
+      - type: APIReference
+        url: https://www.tinybird.co/docs/api-reference
+        title: Tinybird API Reference
+      - type: GitHubOrganization
+        url: https://github.com/tinybirdco
+      - type: Governance
+        url: https://www.tinybird.co/
+        title: Tinybird (vendor-governed)
+      - type: License
+        url: https://opensource.org/license/mit
+        title: MIT (SDKs / CLI)
+      - type: Example
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/tinybird-example.json
+        title: Tinybird API Spec Record Example
+common:
+  - type: Website
+    url: https://github.com/api-evangelist/specifications
+  - type: GitHubRepository
+    url: https://github.com/api-evangelist/specifications
+  - type: JSONSchema
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/json-schema/specification-record-schema.json
+    title: Specification Record JSON Schema
+  - type: JSONStructure
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/json-structure/specification-record-structure.json
+    title: Specification Record JSON Structure
+  - type: JSONLD
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/json-ld/specifications-context.jsonld
+    title: API Specifications JSON-LD Context
+  - type: Vocabulary
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/vocabulary/specifications-vocabulary.yml
+    title: API Specifications Vocabulary
+  - type: Features
+    data:
+      - name: HTTP Request/Response Specifications
+        description: >-
+          Languages for describing synchronous HTTP APIs — paths, methods,
+          parameters, request bodies, responses, and security. Includes
+          OpenAPI, RAML, API Blueprint, and historically WSDL.
+      - name: Event-Driven Specifications
+        description: >-
+          Languages for describing message-driven and event-driven APIs across
+          brokers and protocols. Primarily AsyncAPI 3.x, plus protocol-specific
+          schemas (Avro, Protobuf) used in concert.
+      - name: Service Interface Definition Languages (IDLs)
+        description: >-
+          Languages that define language-agnostic service contracts intended
+          for code generation across clients and servers. Includes gRPC/Protobuf,
+          Smithy, TypeSpec, and historically WSDL.
+      - name: Schema Languages
+        description: >-
+          Languages for describing data shapes independent of a specific
+          transport. Includes JSON Schema (the de facto standard, embedded in
+          OpenAPI and AsyncAPI) and the emerging JSON Structure.
+      - name: RPC Protocol Specifications
+        description: >-
+          Specifications for remote procedure call protocols. Includes JSON-RPC
+          2.0 (used heavily in blockchain and LSP) and gRPC for high-performance
+          RPC.
+      - name: Vendor-Defined Specifications
+        description: >-
+          Vendor-specific specification formats that govern modern API products
+          (e.g. Tinybird pipes). These often emit OpenAPI as a derived artifact
+          while keeping a higher-level domain model as the source of truth.
+  - type: UseCases
+    data:
+      - name: Specification Discovery and Cataloging
+        description: >-
+          Maintaining an enterprise inventory of specifications used across
+          internal and partner APIs, mapped to their governing bodies and
+          tooling.
+      - name: Multi-Format Code Generation
+        description: >-
+          Choosing or layering specifications (TypeSpec or Smithy as a
+          high-level model emitting OpenAPI, JSON Schema, and Protobuf) to
+          generate SDKs across protocols.
+      - name: Event-Driven Architecture Contracts
+        description: >-
+          Using AsyncAPI alongside Avro/Protobuf to define event schemas,
+          channels, and operations for streaming and message-driven systems.
+      - name: Governance and Linting Across Specs
+        description: >-
+          Applying Spectral or other linting frameworks against OpenAPI,
+          AsyncAPI, and JSON Schema artifacts as part of an API governance
+          program.
+      - name: Legacy SOAP/WSDL Modernization
+        description: >-
+          Migrating legacy WSDL/SOAP interfaces to OpenAPI-described REST or
+          gRPC service contracts as part of modernization initiatives.
+  - type: Integrations
+    data:
+      - name: Spectral
+        description: >-
+          Open-source linting engine (Stoplight) for OpenAPI, AsyncAPI, and
+          JSON Schema. The de facto governance engine across HTTP and
+          event-driven specs.
+      - name: Redocly CLI
+        description: >-
+          Open-source CLI for linting, bundling, and rendering OpenAPI specs;
+          enforces style guides and integrates with CI.
+      - name: AsyncAPI Generator
+        description: >-
+          Template-driven code and documentation generator for AsyncAPI specs
+          across languages and brokers.
+      - name: Protoc / Buf
+        description: >-
+          The canonical Protobuf compiler and Buf's modern toolchain for
+          linting, breaking-change detection, and code generation against
+          .proto files.
+      - name: Smithy CLI
+        description: >-
+          AWS-maintained CLI for compiling Smithy models and generating
+          OpenAPI, JSON Schema, and SDK artifacts.
+      - name: TypeSpec Compiler
+        description: >-
+          Microsoft-maintained compiler that emits OpenAPI 3, JSON Schema,
+          Protobuf, and other artifacts from TypeSpec sources.
+  - type: GitHubOrganization
+    url: https://github.com/OAI
+    title: OpenAPI Initiative
+  - type: GitHubOrganization
+    url: https://github.com/asyncapi
+    title: AsyncAPI Initiative
+  - type: GitHubOrganization
+    url: https://github.com/json-schema-org
+    title: JSON Schema Organization
+  - type: GitHubOrganization
+    url: https://github.com/json-structure
+    title: JSON Structure Organization
+  - type: GitHubOrganization
+    url: https://github.com/graphql
+    title: GraphQL Foundation
+  - type: GitHubOrganization
+    url: https://github.com/grpc
+    title: gRPC (CNCF)
+  - type: GitHubOrganization
+    url: https://github.com/protocolbuffers
+    title: Protocol Buffers
+  - type: GitHubOrganization
+    url: https://github.com/smithy-lang
+    title: Smithy-Lang (AWS)
+  - type: GitHubOrganization
+    url: https://github.com/microsoft
+    title: Microsoft (TypeSpec)
+  - type: GitHubOrganization
+    url: https://github.com/raml-org
+    title: RAML Workgroup
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

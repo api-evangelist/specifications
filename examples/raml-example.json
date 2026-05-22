@@ -1,0 +1,28 @@
+{
+  "id": "raml",
+  "name": "RAML (RESTful API Modeling Language)",
+  "aliases": ["RAML"],
+  "category": "HTTP Request/Response",
+  "currentVersion": "1.0",
+  "versions": [
+    { "version": "1.0", "status": "active", "releaseDate": "2016-05-19", "url": "https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md" },
+    { "version": "0.8", "status": "deprecated", "url": "https://github.com/raml-org/raml-spec/blob/master/versions/raml-08/raml-08.md" }
+  ],
+  "governingBody": {
+    "name": "RAML Workgroup (stewarded by Mulesoft/Salesforce)",
+    "url": "https://raml.org/about-raml"
+  },
+  "license": {
+    "id": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  "format": "YAML",
+  "transports": ["HTTP/1.1"],
+  "primaryUseCase": "Model RESTful APIs in YAML with strong support for resource types, traits, and library reuse; widely deployed across Mulesoft/Anypoint stacks.",
+  "specificationUrl": "https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md",
+  "documentationUrl": "https://raml.org/developers/raml-100-tutorial",
+  "repositoryUrl": "https://github.com/raml-org/raml-spec",
+  "tags": ["RAML", "REST", "Mulesoft", "Legacy", "Specification Language"],
+  "status": "legacy",
+  "emits": ["OpenAPI 2.0 (via tooling)"]
+}

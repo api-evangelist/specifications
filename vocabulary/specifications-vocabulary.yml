@@ -1,0 +1,331 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: API Specifications
+  description: >-
+    Vocabulary taxonomy for the meta-layer of API specification languages —
+    HTTP request/response specs, event-driven specs, service interface
+    definition languages, schema languages, RPC protocols, and vendor-defined
+    specs. This vocabulary defines the cross-cutting terminology (spec,
+    version, dialect, schema, interface, contract, profile) used to describe
+    every individual specification profiled in the API Evangelist network.
+  created: "2026-05-22"
+  modified: "2026-05-22"
+
+operational:
+  specifications:
+    - name: OpenAPI Specification
+      namespace: openapi
+      category: HTTP Request/Response
+      version: "3.1.0"
+      governingBody: OpenAPI Initiative
+      parent: Linux Foundation
+      license: Apache-2.0
+      status: active
+    - name: AsyncAPI Specification
+      namespace: asyncapi
+      category: Event-Driven
+      version: "3.0.0"
+      governingBody: AsyncAPI Initiative
+      parent: Linux Foundation
+      license: Apache-2.0
+      status: active
+    - name: JSON Schema
+      namespace: json-schema
+      category: Schema
+      version: "Draft 2020-12"
+      governingBody: JSON Schema
+      license: BSD-3-Clause
+      status: active
+    - name: JSON Structure
+      namespace: json-structure
+      category: Schema
+      version: "Core v0"
+      governingBody: JSON Structure Working Group
+      license: Apache-2.0
+      status: emerging
+    - name: GraphQL SDL
+      namespace: graphql
+      category: Service Interface (IDL)
+      version: "October 2021"
+      governingBody: GraphQL Foundation
+      parent: Linux Foundation
+      license: OWFa-1.0
+      status: active
+    - name: gRPC / Protobuf
+      namespace: grpc
+      category: RPC Protocol
+      version: "proto3"
+      governingBody: CNCF / Google
+      parent: Linux Foundation
+      license: Apache-2.0
+      status: active
+    - name: Smithy
+      namespace: smithy
+      category: Service Interface (IDL)
+      version: "2.0"
+      governingBody: Smithy-Lang (AWS)
+      license: Apache-2.0
+      status: active
+    - name: TypeSpec
+      namespace: typespec
+      category: Service Interface (IDL)
+      version: "1.x"
+      governingBody: Microsoft
+      license: MIT
+      status: active
+    - name: RAML
+      namespace: raml
+      category: HTTP Request/Response
+      version: "1.0"
+      governingBody: RAML Workgroup (Mulesoft/Salesforce)
+      license: Apache-2.0
+      status: legacy
+    - name: API Blueprint
+      namespace: api-blueprint
+      category: HTTP Request/Response
+      version: "1A r9"
+      governingBody: Apiary / Oracle
+      license: MIT
+      status: historical
+    - name: WSDL / SOAP
+      namespace: wsdl
+      category: Service Interface (IDL)
+      version: "WSDL 2.0 / SOAP 1.2"
+      governingBody: W3C
+      license: W3C-Document
+      status: historical
+    - name: JSON-RPC 2.0
+      namespace: json-rpc
+      category: RPC Protocol
+      version: "2.0"
+      governingBody: JSON-RPC Working Group
+      license: CC0-1.0
+      status: active
+    - name: Tinybird API Spec
+      namespace: tinybird
+      category: Vendor-Defined
+      version: "vendor-current"
+      governingBody: Tinybird
+      license: MIT
+      status: active
+
+  resources:
+    - name: Specification
+      description: A named language for describing API behavior, schema, or interface.
+      actions: [list, reference, compare, catalog]
+    - name: Version
+      description: A specific dated/numbered revision of a specification.
+      actions: [list, reference]
+    - name: Dialect
+      description: A schema dialect or draft (e.g. JSON Schema Draft 2020-12, OpenAPI 3.0 Schema Object).
+      actions: [reference, validate]
+    - name: Schema
+      description: A structural definition of data shapes, embedded in or standalone from a spec.
+      actions: [author, validate, reference]
+    - name: Interface
+      description: A described service surface — endpoints, operations, channels, RPC methods.
+      actions: [author, describe, generate]
+    - name: Contract
+      description: An agreed-upon, often versioned, machine-readable description of API behavior.
+      actions: [author, govern, version]
+    - name: Profile
+      description: A constrained subset or conformance class of a specification.
+      actions: [reference, validate]
+    - name: GoverningBody
+      description: The organization or working group that maintains the specification.
+      actions: [reference]
+    - name: ToolingEcosystem
+      description: The set of tools, SDKs, linters, and generators around a specification.
+      actions: [list, reference]
+
+  actions:
+    - verb: author
+      description: Write or maintain a specification document or schema.
+      pattern: write
+    - verb: validate
+      description: Verify that a document conforms to a specification or schema dialect.
+      pattern: read
+    - verb: reference
+      description: Look up a specification, version, or term.
+      pattern: read
+    - verb: catalog
+      description: Inventory specifications and their properties across an organization or domain.
+      pattern: read
+    - verb: govern
+      description: Apply organizational rules and linting to spec artifacts.
+      pattern: write
+    - verb: compare
+      description: Contrast two specifications across category, transport, or feature axes.
+      pattern: read
+    - verb: generate
+      description: Emit code, docs, mocks, or alternate spec formats from a source spec.
+      pattern: write
+
+  schemas:
+    core:
+      - SpecificationRecord
+      - GoverningBody
+      - License
+      - SpecificationVersion
+
+  parameters:
+    identifiers:
+      - name: specificationId
+        description: Stable identifier for a specification (e.g. openapi, asyncapi).
+      - name: version
+        description: Specification version string.
+      - name: governingBodyId
+        description: Identifier of the governing body.
+    filters:
+      - name: category
+        description: Category filter (HTTP Request/Response, Event-Driven, IDL, Schema, RPC, Vendor-Defined).
+      - name: status
+        description: Lifecycle status filter (active, maintenance, legacy, historical, emerging).
+      - name: license
+        description: SPDX license identifier filter.
+      - name: parent
+        description: Umbrella foundation filter (e.g. Linux Foundation, W3C, CNCF).
+
+  enums:
+    categories:
+      - HTTP Request/Response
+      - Event-Driven
+      - Service Interface (IDL)
+      - Schema
+      - RPC Protocol
+      - Vendor-Defined
+    statuses:
+      - active
+      - maintenance
+      - legacy
+      - historical
+      - emerging
+    formats:
+      - YAML
+      - JSON
+      - Markdown
+      - XML
+      - DSL
+      - Protobuf
+      - Multiple
+    transports:
+      - HTTP/1.1
+      - HTTP/2
+      - HTTP/3
+      - WebSocket
+      - Kafka
+      - AMQP
+      - MQTT
+      - NATS
+      - SNS/SQS
+      - TCP
+      - gRPC
+      - XML/SOAP
+      - Multiple
+      - N/A
+    governingBodies:
+      - OpenAPI Initiative
+      - AsyncAPI Initiative
+      - JSON Schema
+      - JSON Structure Working Group
+      - GraphQL Foundation
+      - Cloud Native Computing Foundation
+      - Smithy-Lang (AWS)
+      - Microsoft
+      - RAML Workgroup
+      - Apiary / Oracle
+      - W3C
+      - JSON-RPC Working Group
+      - Tinybird
+
+  authentication:
+    schemes: []
+    notes: API specifications are public documents — no authentication required.
+
+capability:
+  workflows:
+    - name: Specification Selection
+      description: Choosing the right specification language(s) for a new API based on transport, audience, and tooling.
+      specifications: [OpenAPI Specification, AsyncAPI Specification, gRPC / Protobuf, GraphQL SDL, Smithy, TypeSpec]
+      personas: [API Architect, API Designer, Platform Engineer]
+    - name: Multi-Format Generation
+      description: Authoring in a high-level IDL (TypeSpec, Smithy) and emitting OpenAPI, JSON Schema, and Protobuf.
+      specifications: [TypeSpec, Smithy, OpenAPI Specification, JSON Schema]
+      personas: [API Designer, Platform Engineer]
+    - name: Event-Driven Contract Design
+      description: Defining channels, operations, and messages using AsyncAPI alongside Avro/Protobuf schemas.
+      specifications: [AsyncAPI Specification, gRPC / Protobuf, JSON Schema]
+      personas: [Event Architect, Platform Engineer]
+    - name: Specification Governance
+      description: Applying linting and conventions across OpenAPI, AsyncAPI, and JSON Schema artifacts.
+      specifications: [OpenAPI Specification, AsyncAPI Specification, JSON Schema]
+      personas: [API Governance Lead, Platform Engineer]
+    - name: Legacy Modernization
+      description: Migrating WSDL/SOAP and RAML interfaces to modern OpenAPI- or Smithy-described services.
+      specifications: [WSDL / SOAP, RAML, OpenAPI Specification, Smithy]
+      personas: [API Architect, Platform Engineer]
+    - name: Vendor Spec Reconciliation
+      description: Mapping vendor-defined formats (e.g. Tinybird) to OpenAPI for consistent governance and SDK generation.
+      specifications: [Tinybird API Spec, OpenAPI Specification]
+      personas: [API Designer, Platform Engineer]
+
+  personas:
+    - id: api-architect
+      name: API Architect
+      description: Defines the specification strategy and contract patterns across an organization.
+      workflows: [Specification Selection, Legacy Modernization]
+    - id: api-designer
+      name: API Designer
+      description: Authors specification artifacts (OpenAPI, AsyncAPI, TypeSpec, Smithy).
+      workflows: [Specification Selection, Multi-Format Generation, Vendor Spec Reconciliation]
+    - id: platform-engineer
+      name: Platform Engineer
+      description: Builds and operates the tooling that consumes specifications (generators, mocks, gateways).
+      workflows: [Multi-Format Generation, Event-Driven Contract Design, Specification Governance, Legacy Modernization, Vendor Spec Reconciliation]
+    - id: api-governance-lead
+      name: API Governance Lead
+      description: Owns linting, conventions, and lifecycle rules across the spec inventory.
+      workflows: [Specification Governance]
+    - id: event-architect
+      name: Event Architect
+      description: Designs event-driven architectures and their AsyncAPI/schema contracts.
+      workflows: [Event-Driven Contract Design]
+
+  domains:
+    - name: HTTP Specifications
+      description: Languages for describing synchronous HTTP REST APIs.
+      specifications: [OpenAPI Specification, RAML, API Blueprint]
+    - name: Event-Driven Specifications
+      description: Languages for describing message-driven and event-driven APIs.
+      specifications: [AsyncAPI Specification]
+    - name: Service Interface Definition Languages
+      description: Protocol-agnostic IDLs that emit clients, servers, and other specs.
+      specifications: [GraphQL SDL, gRPC / Protobuf, Smithy, TypeSpec, WSDL / SOAP]
+    - name: Schema Languages
+      description: Languages for describing data shapes independent of transport.
+      specifications: [JSON Schema, JSON Structure]
+    - name: RPC Protocols
+      description: Specifications for remote procedure call protocols.
+      specifications: [gRPC / Protobuf, JSON-RPC 2.0]
+    - name: Vendor-Defined Specifications
+      description: Vendor-owned specification formats that govern specific products.
+      specifications: [Tinybird API Spec]
+
+crossReference:
+  - resource: Specification
+    operations: [catalog, reference, compare]
+    specifications: [OpenAPI Specification, AsyncAPI Specification, JSON Schema, JSON Structure, GraphQL SDL, gRPC / Protobuf, Smithy, TypeSpec, RAML, API Blueprint, WSDL / SOAP, JSON-RPC 2.0, Tinybird API Spec]
+    personas: [API Architect, API Designer, API Governance Lead]
+  - resource: Schema
+    operations: [author, validate, reference]
+    specifications: [JSON Schema, JSON Structure, OpenAPI Specification, AsyncAPI Specification, gRPC / Protobuf]
+    personas: [API Designer, Platform Engineer]
+  - resource: Interface
+    operations: [author, describe, generate]
+    specifications: [GraphQL SDL, gRPC / Protobuf, Smithy, TypeSpec, OpenAPI Specification, WSDL / SOAP]
+    personas: [API Designer, Platform Engineer]
+  - resource: Contract
+    operations: [govern, version]
+    specifications: [OpenAPI Specification, AsyncAPI Specification, Smithy, TypeSpec]
+    personas: [API Governance Lead, API Architect]
