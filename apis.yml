@@ -72,7 +72,7 @@ apis:
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/json-schema/specification-record-schema.json
     title: Specification Record Schema
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/openapi-example.json
     title: OpenAPI Specification Record Example
@@ -116,7 +116,7 @@ apis:
   - type: Tools
     url: https://www.asyncapi.com/tools
     title: AsyncAPI Tools
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/asyncapi-example.json
     title: AsyncAPI Specification Record Example
@@ -160,7 +160,7 @@ apis:
   - type: Tools
     url: https://json-schema.org/tools
     title: JSON Schema Tooling Ecosystem
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/json-schema-example.json
     title: JSON Schema Specification Record Example
@@ -191,7 +191,7 @@ apis:
   - type: License
     url: https://www.apache.org/licenses/LICENSE-2.0
     title: Apache 2.0
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/json-structure-example.json
     title: JSON Structure Specification Record Example
@@ -233,7 +233,7 @@ apis:
   - type: License
     url: https://www.openwebfoundation.org/the-agreements/the-owf-1-0-agreements-granted-claims/owfa-1-0
     title: OWFa 1.0
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/graphql-example.json
     title: GraphQL Specification Record Example
@@ -279,7 +279,7 @@ apis:
   - type: License
     url: https://www.apache.org/licenses/LICENSE-2.0
     title: Apache 2.0
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/grpc-protobuf-example.json
     title: gRPC / Protobuf Specification Record Example
@@ -315,7 +315,7 @@ apis:
   - type: License
     url: https://www.apache.org/licenses/LICENSE-2.0
     title: Apache 2.0
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/smithy-example.json
     title: Smithy Specification Record Example
@@ -352,7 +352,7 @@ apis:
   - type: License
     url: https://opensource.org/license/mit
     title: MIT
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/typespec-example.json
     title: TypeSpec Specification Record Example
@@ -389,7 +389,7 @@ apis:
   - type: License
     url: https://www.apache.org/licenses/LICENSE-2.0
     title: Apache 2.0
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/raml-example.json
     title: RAML Specification Record Example
@@ -422,7 +422,7 @@ apis:
   - type: License
     url: https://opensource.org/license/mit
     title: MIT
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/api-blueprint-example.json
     title: API Blueprint Specification Record Example
@@ -463,7 +463,7 @@ apis:
   - type: License
     url: https://www.w3.org/copyright/document-license-2023/
     title: W3C Document License
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/wsdl-soap-example.json
     title: WSDL / SOAP Specification Record Example
@@ -494,7 +494,7 @@ apis:
   - type: License
     url: https://creativecommons.org/publicdomain/zero/1.0/
     title: Public Domain / CC0
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/json-rpc-example.json
     title: JSON-RPC Specification Record Example
@@ -529,7 +529,7 @@ apis:
   - type: License
     url: https://opensource.org/license/mit
     title: MIT (SDKs / CLI)
-  - type: Example
+  - type: Examples
     url: >-
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/tinybird-example.json
     title: Tinybird API Spec Record Example
