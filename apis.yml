@@ -534,6 +534,8 @@ apis:
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/tinybird-example.json
     title: Tinybird API Spec Record Example
 common:
+- type: DomainSecurity
+  url: security/specifications-domain-security.yml
 - type: Website
   url: https://github.com/api-evangelist/specifications
 - type: GitHubRepository
