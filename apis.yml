@@ -32,7 +32,7 @@ description: >-
   body, license, and tooling ecosystem.
 created: '2026-05-22'
 modified: '2026-05-22'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: specifications:openapi
   name: OpenAPI Specification (OAS)
