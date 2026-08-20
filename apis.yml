@@ -16,6 +16,14 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/specifications.png
 tags:
+- API Specification
+- Specification Languages
+- API Design
+- Contracts
+- Schemas
+- Interface Definitions
+- Standards
+tags_raw:
 - API Specifications
 - Specification Languages
 - API Design
@@ -144,6 +152,12 @@ apis:
   humanURL: https://json-schema.org/
   baseURL: https://json-schema.org/draft/2020-12
   tags:
+  - JSON-Schema
+  - Validation
+  - Schema
+  - IETF
+  - Specification Language
+  tags_raw:
   - JSON Schema
   - Validation
   - Schema
@@ -379,6 +393,12 @@ apis:
   humanURL: https://raml.org/
   baseURL: https://github.com/raml-org/raml-spec
   tags:
+  - RAML
+  - REST
+  - MuleSoft
+  - Legacy
+  - Specification Language
+  tags_raw:
   - RAML
   - REST
   - Mulesoft
