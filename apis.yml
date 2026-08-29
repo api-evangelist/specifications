@@ -3,6 +3,17 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/apis.yml
 name: API Specifications
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -565,6 +576,14 @@ apis:
       https://raw.githubusercontent.com/api-evangelist/specifications/refs/heads/main/examples/tinybird-example.json
     title: Tinybird API Spec Record Example
 common:
+- type: IssueTracker
+  url: https://github.com/OAI/OpenAPI-Specification/issues
+- type: Releases
+  url: https://github.com/OAI/OpenAPI-Specification/releases
+- type: CodeOfConduct
+  url: https://github.com/OAI/.github/blob/main/.github/CODE_OF_CONDUCT.md
+- type: ContributionGuide
+  url: https://github.com/OAI/OpenAPI-Specification/blob/main/CONTRIBUTING.md
 - type: DomainSecurity
   url: security/specifications-domain-security.yml
 - type: Website
