@@ -27,7 +27,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/specifications.png
 tags:
-- API Specifications
+- API Specification
 - Specification Languages
 - API Design
 - Contracts
@@ -406,7 +406,7 @@ apis:
   tags:
   - RAML
   - REST
-  - Mulesoft
+  - MuleSoft
   - Legacy
   - Specification Language
   tags_raw:
