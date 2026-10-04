@@ -5,14 +5,21 @@ name: API Specifications
 type: Index
 deliveryModel:
   model: unknown
+  license_evidence:
+    not_product:
+    - api-evangelist/specifications
+    - apiaryio/api-blueprint
+    - asyncapi/spec
+    - graphql/graphql-spec
+    - grpc/grpc
   open_source: unknown
   commercial: false
   callable_host: false
   label: Delivery model not determined — needs a product licence on record
   confidence: low
   source:
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
@@ -163,7 +170,7 @@ apis:
   humanURL: https://json-schema.org/
   baseURL: https://json-schema.org/draft/2020-12
   tags:
-  - JSON-Schema
+  - JSON Schema
   - Validation
   - Schema
   - IETF
@@ -174,6 +181,7 @@ apis:
   - Schema
   - IETF
   - Specification Language
+  - JSON-Schema
   properties:
   - type: Documentation
     url: https://json-schema.org/learn/getting-started-step-by-step
@@ -724,3 +732,4 @@ common:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+kind: topic
